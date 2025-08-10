@@ -1,0 +1,325 @@
+/* 夜間模式下解析內容區塊顏色加強 */
+.dark-theme #explanation {
+    color: #000000;
+    border-left: 4px solid #4efc8d;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 1.08em;
+    margin-top: 22px;
+    box-shadow: none;
+    letter-spacing: 0.5px;
+}
+
+/* 夜間模式下解析內容文字顏色加強，正確/錯誤分色 */
+.dark-theme #feedback {
+    color: #fff;
+    background: rgba(40, 44, 52, 0.85);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+}
+
+.dark-theme #feedback.correct {
+    color: #4efc8d;
+}
+
+.dark-theme #feedback.incorrect {
+    color: #ff6b6b;
+}
+
+/* 夜間模式下解析內容文字顏色加強 */
+.dark-theme #feedback {
+    color: #fff;
+    background: rgba(40, 44, 52, 0.85);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+}
+
+/* 題目與選項白色字型（夜間模式） */
+.dark-theme #question-text {
+    color: #fff;
+}
+
+.dark-theme #options-form {
+    color: #fff;
+}
+
+.dark-theme #options-form label {
+    color: #fff !important;
+}
+
+/* 夜間模式主題 */
+.dark-theme {
+    background-color: #181a20;
+    color: #e0e0e0;
+}
+
+.dark-theme .container {
+    background-color: #23272f;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+    padding: 24px 18px;
+}
+
+.dark-theme .header-title {
+    color: #f5f5f5;
+    text-shadow: 0 2px 8px #000;
+}
+
+.dark-theme .form-title,
+.dark-theme label,
+.dark-theme .form-select,
+.dark-theme input,
+.dark-theme .btn {
+    color: #e0e0e0;
+}
+
+.dark-theme .form-select,
+.dark-theme input {
+    background-color: #23272f;
+    border: 1px solid #444;
+}
+
+.dark-theme .btn {
+    background-color: #2d313a;
+    border-color: #444;
+}
+
+.dark-theme .btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.dark-theme .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.dark-theme .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.dark-theme .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.dark-theme hr {
+    border-color: #444;
+}
+
+.dark-theme .modal-content {
+    background-color: #23272f;
+    color: #e0e0e0;
+}
+
+.dark-theme .progress-info,
+.dark-theme .timer {
+    color: #e0e0e0;
+}
+
+.dark-theme #question-image img {
+    border: 2px solid #444;
+    border-radius: 8px;
+}
+
+body {
+    font-family: 'Microsoft JhengHei', Arial, sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 32px 24px 54px 24px;
+}
+
+h1 {
+    text-align: center;
+    color: #2d3a4b;
+    margin-bottom: 24px;
+}
+
+label {
+    font-size: 1.1em;
+}
+
+/* 選取答案時，label 文字變紅色 */
+#options-form input[type="radio"]:checked+span+label,
+#options-form input[type="checkbox"]:checked+span+label {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+#options-form label {
+    color: #222;
+    font-weight: normal;
+    transition: color 0.2s;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 4px 8px;
+    margin: 0 8px;
+    font-size: 1.1em;
+}
+
+#result-section {
+    margin-top: 24px;
+}
+
+#question-image img {
+    max-width: 100%;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto 16px auto;
+}
+
+#question-text {
+    font-size: 1.15em;
+    margin-bottom: 16px;
+    color: maroon;
+    font-weight: bold;
+}
+
+#options-form label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+#feedback {
+    margin-top: 22px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+#feedback.show {
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+#score {
+    font-size: 1.4em;
+    color: #dc3545;
+    margin-bottom: 16px;
+}
+
+.header-title {
+    background: #e0e0e0;
+    color: #222;
+    padding: 18px 0 14px 0;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+    margin: -32px -24px 24px -24px;
+    letter-spacing: 2px;
+}
+
+.form-title {
+    font-size: 1.2em;
+    color: #032b53;
+    font-weight: bold;
+}
+
+.timer {
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 1.1em;
+    color: #0c9c43;
+    font-weight: bold;
+}
+
+.progress-info {
+    font-size: 1.1em;
+    color: #3498db;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#weighted-list {
+    background: #000000;
+    border: 1px solid #ffe58f;
+    padding: 12px 18px;
+    border-radius: 8px;
+    margin: 68px 0 0 0;
+    font-size: 1em;
+    box-shadow: 0 2px 8px rgba(255, 229, 143, 0.12);
+}
+
+#question-count {
+    font-size: 1.1em;
+    padding: 2px 8px;
+    min-width: 80px;
+    height: 30px;
+    border-radius: 6px;
+    margin: 8px;
+}
+
+#jump-select {
+    font-size: 1.1em;
+    padding: 8px;
+    min-width: 90px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.explanation-info {
+    font-size: 1.1em;
+    color: #3498db;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.modal-title {
+    font-size: 1.5em;
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* 按鈕點擊縮放動畫 */
+.btn:active {
+    transform: scale(0.95);
+    transition: transform 0.1s;
+}
+
+/* 回饋訊息淡入動畫 */
+#feedback {
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+#feedback.show {
+    opacity: 1;
+}
+
+/* 題目、圖片、選項區塊淡入動畫 */
+#question-text,
+#question-image,
+#options-form {
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+#question-text.show,
+#question-image.show,
+#options-form.show {
+    opacity: 1;
+}
